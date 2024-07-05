@@ -22,7 +22,7 @@ const UserList = (props) => {
 
   useEffect(() => {
     fetchUsers();
-  }, []);
+  }, [users]);
 
   return (
     <ScrollView>

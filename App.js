@@ -11,9 +11,21 @@ const Stack = createNativeStackNavigator();
 function MyStack() {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="UserList" component={UserList} />
-      <Stack.Screen name="CreateUserScreen" component={CreateUserScreen} />
-      <Stack.Screen name="UserDetailScreen" component={UserDetailScreen} />
+      <Stack.Screen
+        name="UserList"
+        component={UserList}
+        options={{ title: "Users List" }}
+      />
+      <Stack.Screen
+        name="CreateUserScreen"
+        component={CreateUserScreen}
+        options={{ title: "Create a New user" }}
+      />
+      <Stack.Screen
+        name="UserDetailScreen"
+        component={UserDetailScreen}
+        options={{ title: "User Detail" }}
+      />
     </Stack.Navigator>
   );
 }
